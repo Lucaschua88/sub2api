@@ -100,8 +100,6 @@
 <script setup lang="ts">
 import { nextTick, ref } from 'vue'
 import AppLayout from '@/components/layout/AppLayout.vue'
-import AppLayout from '@/components/layout/AppLayout.vue'
-import AppLayout from '@/components/layout/AppLayout.vue'
 
 type ChatMessage = {
   role: 'user' | 'assistant'
