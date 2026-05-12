@@ -1,0 +1,163 @@
+./Dockerfile:2:# Sub2API Multi-Stage Dockerfile
+./Dockerfile:88:LABEL description="Sub2API - AI API Gateway Platform"
+./deploy/DOCKER.md:1:# Sub2API Docker Image
+./deploy/DOCKER.md:3:Sub2API is an AI API Gateway Platform for distributing and managing AI product subscription API quotas.
+./deploy/docker-compose.standalone.yml:2:# Sub2API Docker Compose - Standalone Configuration
+./deploy/docker-compose.standalone.yml:4:# This configuration runs only the Sub2API application.
+./deploy/docker-compose.dev.yml:2:# Sub2API Docker Compose - Local Development Build
+./deploy/Dockerfile:2:# Sub2API Multi-Stage Dockerfile
+./deploy/Dockerfile:77:LABEL description="Sub2API - AI API Gateway Platform"
+./deploy/.env.example:2:# Sub2API Docker Environment Configuration
+./deploy/.env.example:118:# 必须 >=（所有 Sub2API 实例的 DATABASE_MAX_OPEN_CONNS 之和）+ 预留余量（例如 20%）。
+./deploy/.env.example:137:# - 这些参数控制 Sub2API 进程到 PostgreSQL 的连接池大小（不是 PostgreSQL 自身的 max_connections）。
+./deploy/.env.example:358:# Sub2API supports TWO Gemini OAuth modes:
+./deploy/.gitignore:2:# Sub2API Deploy Directory - Git Ignore
+./deploy/sub2api-datamanagementd.service:2:Description=Sub2API Data Management Daemon
+./deploy/config.example.yaml:1:# Sub2API Configuration File
+./deploy/config.example.yaml:2:# Sub2API 配置文件
+./deploy/config.example.yaml:858:# LinuxDo Connect OAuth 登录（用于 Sub2API 用户登录）
+./deploy/config.example.yaml:883:# 通用 OIDC OAuth 登录（用于 Sub2API 用户登录）
+./deploy/config.example.yaml:1015:# Sub2API supports TWO Gemini OAuth modes:
+./deploy/config.example.yaml:1016:# Sub2API 支持两种 Gemini OAuth 模式：
+./deploy/sub2api.service:2:Description=Sub2API - AI API Gateway Platform
+./deploy/docker-compose.yml:2:# Sub2API Docker Compose Configuration
+./deploy/docker-compose.yml:16:  # Sub2API Application
+./deploy/README.md:1:# Sub2API Deployment Files
+./deploy/README.md:3:This directory contains files for deploying Sub2API on Linux servers.
+./deploy/README.md:173:# Restart Sub2API only
+./deploy/README.md:197:# Restart Sub2API only
+./deploy/README.md:254:Sub2API supports three methods to connect to Gemini:
+./deploy/README.md:299:   - Name: e.g., "Sub2API Gemini"
+./deploy/README.md:562:Sub2API supports TLS fingerprint simulation to make requests appear as if they come from the official Claude CLI (Node.js client).
+./deploy/docker-compose.local.yml:2:# Sub2API Docker Compose - Local Directory Version
+./deploy/docker-compose.local.yml:24:  # Sub2API Application
+./deploy/docker-deploy.sh:3:# Sub2API Docker Deployment Preparation Script
+./deploy/docker-deploy.sh:5:# This script prepares deployment files for Sub2API:
+./deploy/docker-deploy.sh:57:    echo "  Sub2API Deployment Preparation"
+./deploy/install.sh:3:# Sub2API Installation Script
+./deploy/install.sh:4:# Sub2API 安装脚本
+./deploy/install.sh:51:    ["install_title"]="Sub2API 安装脚本"
+./deploy/install.sh:79:    ["install_complete"]="Sub2API 安装完成！"
+./deploy/install.sh:83:    ["step2_start_service"]="启动 Sub2API 服务："
+./deploy/install.sh:97:    ["upgrading"]="正在升级 Sub2API..."
+./deploy/install.sh:113:    ["not_installed"]="Sub2API 尚未安装，请先执行全新安装"
+./deploy/install.sh:117:    ["uninstall_confirm"]="这将从系统中移除 Sub2API。"
+./deploy/install.sh:129:    ["uninstall_complete"]="Sub2API 已卸载"
+./deploy/install.sh:134:    ["cmd_install"]="安装 Sub2API"
+./deploy/install.sh:136:    ["cmd_uninstall"]="卸载 Sub2API"
+./deploy/install.sh:143:    ["server_config_desc"]="配置 Sub2API 服务监听地址"
+./deploy/install.sh:176:    ["install_title"]="Sub2API Installation Script"
+./deploy/install.sh:204:    ["install_complete"]="Sub2API installation completed!"
+./deploy/install.sh:208:    ["step2_start_service"]="Start Sub2API service:"
+./deploy/install.sh:222:    ["upgrading"]="Upgrading Sub2API..."
+./deploy/install.sh:238:    ["not_installed"]="Sub2API is not installed. Please run a fresh install first"
+./deploy/install.sh:242:    ["uninstall_confirm"]="This will remove Sub2API from your system."
+./deploy/install.sh:254:    ["uninstall_complete"]="Sub2API has been uninstalled"
+./deploy/install.sh:259:    ["cmd_install"]="Install Sub2API"
+./deploy/install.sh:261:    ["cmd_uninstall"]="Remove Sub2API"
+./deploy/install.sh:268:    ["server_config_desc"]="Configure Sub2API server listen address"
+./deploy/install.sh:657:Description=Sub2API - AI API Gateway Platform
+./deploy/install.sh:793:    # Check if Sub2API is installed
+./deploy/install.sh:831:# Requires: Sub2API must already be installed
+./deploy/install.sh:835:    # Check if Sub2API is installed
+./.goreleaser.yaml:173:  name_template: "Sub2API {{.Version}}"
+./Dockerfile.goreleaser:2:# Sub2API Dockerfile for GoReleaser
+./Dockerfile.goreleaser:16:LABEL description="Sub2API - AI API Gateway Platform"
+./Dockerfile.save:2:# Sub2API Multi-Stage Dockerfile
+./Dockerfile.save:88:LABEL description="Sub2API - AI API Gateway Platform"
+./.goreleaser.simple.yaml:67:  name_template: "Sub2API {{.Version}} (Simple)"
+./README_CN.md:1:# Sub2API
+./README_CN.md:19:> **Sub2API 官方仅使用  `sub2api.org` 与 `pincc.ai` 两个域名。其他使用 Sub2API 名义的网站可能为第三方部署或服务，与本项目无关，请自行甄别。**
+./README_CN.md:34:Sub2API 是一个 AI API 网关平台，用于分发和管理 AI 产品订阅的 API 配额。用户通过平台生成的 API Key 调用上游 AI 服务，平台负责鉴权、计费、负载均衡和请求转发。
+./README_CN.md:55:<td valign="middle"><b><a href="https://shop.pincc.ai/">PinCC</a></b> 是基于 Sub2API 搭建的官方中转服务，提供 Claude Code、Codex、Gemini 等主流模型的稳定中转，开箱即用，免去自建部署与运维烦恼。</td>
+./README_CN.md:75:<td>感谢 丝绸API 赞助了本项目！ <a href="https://code.silkapi.com/register?aff=SUB2API">丝绸API</a> 是基于 Sub2API 搭建的中转服务，专注于提供 Codex 高速稳定API中转。</td>
+./README_CN.md:114:围绕 Sub2API 的社区扩展与集成项目：
+./README_CN.md:118:| ~~[Sub2ApiPay](https://github.com/touwaeriol/sub2apipay)~~ | ~~自助支付系统~~ | **已内置** — 支付功能已集成到 Sub2API 中，无需独立部署。详见 [支付配置指南](docs/PAYMENT_CN.md) |
+./README_CN.md:134:通过 Nginx 反向代理 Sub2API（或 CRS 服务）并搭配 Codex CLI 使用时，需要在 Nginx 配置的 `http` 块中添加：
+./README_CN.md:614:Sub2API 支持 [Antigravity](https://antigravity.so/) 账户，授权后可通过专用端点访问 Claude 和 Gemini 模型。
+./docs/ADMIN_PAYMENT_INTEGRATION_API.md:10:本文档用于对接外部支付系统（如 `sub2apipay`）与 Sub2API 的 Admin API，覆盖：
+./docs/ADMIN_PAYMENT_INTEGRATION_API.md:103:当 Sub2API 打开 `purchase_subscription_url` 或用户侧自定义页面 iframe URL 时，会统一追加：
+./docs/ADMIN_PAYMENT_INTEGRATION_API.md:130:This document describes the minimal Sub2API Admin API surface for external payment integrations (for example, `sub2apipay`), including:
+./docs/ADMIN_PAYMENT_INTEGRATION_API.md:223:When Sub2API opens `purchase_subscription_url` or a user-facing custom page iframe URL, it appends:
+./docs/PAYMENT_CN.md:3:Sub2API 内置支付系统，支持用户自助充值，无需部署独立的支付服务。
+./docs/PAYMENT_CN.md:273:| 部署方式 | 独立服务（Next.js + PostgreSQL） | 内置于 Sub2API，无需额外部署 |
+./docs/PAYMENT_CN.md:275:| 配置方式 | 环境变量 + 独立管理后台 | Sub2API 管理后台内统一配置 |
+./docs/PAYMENT_CN.md:278:| 订单管理 | 独立管理界面 | 集成在 Sub2API 管理后台 |
+./docs/PAYMENT_CN.md:282:1. 在 Sub2API 管理后台启用支付并配置服务商（使用相同的支付凭证）
+./docs/PAYMENT_CN.md:283:2. 更新 Webhook 回调地址为 Sub2API 的回调地址
+./docs/PAYMENT.md:3:Sub2API has a built-in payment system that enables user self-service top-up without deploying a separate payment service.
+./docs/PAYMENT.md:273:| Deployment | Separate service (Next.js + PostgreSQL) | Built into Sub2API, no extra deployment |
+./docs/PAYMENT.md:275:| Configuration | Environment variables + separate admin UI | Unified in Sub2API admin dashboard |
+./docs/PAYMENT.md:278:| Order Management | Separate admin interface | Integrated in Sub2API admin dashboard |
+./docs/PAYMENT.md:282:1. Enable payment in Sub2API admin dashboard and configure providers (use the same payment credentials)
+./docs/PAYMENT.md:283:2. Update webhook callback URLs to Sub2API's callback endpoints
+./.dockerignore:2:# Docker Ignore File for Sub2API
+./README.md:1:# Sub2API
+./README.md:19:> **Sub2API officially uses only the domains `sub2api.org` and `pincc.ai`. Other websites using the Sub2API name may be third-party deployments or services and are not affiliated with this project. Please verify and exercise your own judgment.**
+./README.md:25:Try Sub2API online: **[https://demo.sub2api.org/](https://demo.sub2api.org/)**
+./README.md:35:Sub2API is an AI API gateway platform designed to distribute and manage API quotas from AI product subscriptions. Users can access upstream AI services through platform-generated API Keys, while the platform handles authentication, billing, load balancing, and request forwarding.
+./README.md:56:<td valign="middle"><b><a href="https://shop.pincc.ai/">PinCC</a></b> is the official relay service built on Sub2API, offering stable access to Claude Code, Codex, Gemini and other popular models — ready to use, no deployment or maintenance required.</td>
+./README.md:76:<td>Thanks to SilkAPI for sponsoring this project! <a href="https://code.silkapi.com/register?aff=SUB2API">SilkAPI</a> is a relay service built on Sub2API, specializing in providing high-speed and stable Codex API relay.</td>
+./README.md:115:Community projects that extend or integrate with Sub2API:
+./README.md:119:| ~~[Sub2ApiPay](https://github.com/touwaeriol/sub2apipay)~~ | ~~Self-service payment system~~ | **Now Built-in** — Payment is now integrated into Sub2API, no separate deployment needed. See [Payment Configuration Guide](docs/PAYMENT.md) |
+./README.md:135:When using Nginx as a reverse proxy for Sub2API (or CRS) with Codex CLI, add the following to the `http` block in your Nginx configuration:
+./README.md:551:Sub2API supports [Antigravity](https://antigravity.so/) accounts. After authorization, dedicated endpoints are available for Claude and Gemini models.
+./backend/migrations/001_init.sql:1:-- Sub2API 初始化数据库迁移脚本
+./backend/migrations/003_subscription.sql:1:-- Sub2API 订阅功能迁移脚本
+./backend/migrations/002_account_type_migration.sql:1:-- Sub2API 账号类型迁移脚本
+./backend/internal/service/auth_email_binding.go:127:	siteName := "Sub2API"
+./backend/internal/service/totp_service.go:92:	totpIssuer      = "Sub2API"
+./backend/internal/service/payment_order.go:505:		return "Sub2API Subscription " + plan.Name
+./backend/internal/service/payment_order.go:517:	return "Sub2API " + amountStr + " " + currency
+./backend/internal/service/setting_service.go:711:		SiteName:                         s.getStringOrDefault(settings, SettingKeySiteName, "Sub2API"),
+./backend/internal/service/setting_service.go:2146:		return "Sub2API"
+./backend/internal/service/setting_service.go:2327:		SettingKeySiteName:                                 "Sub2API",
+./backend/internal/service/setting_service.go:2502:		SiteName:                         s.getStringOrDefault(settings, SettingKeySiteName, "Sub2API"),
+./backend/internal/service/auth_oauth_email_flow.go:45:	siteName := "Sub2API"
+./backend/internal/service/balance_notify_service.go:25:	defaultSiteName = "Sub2API"
+./backend/internal/service/user_service.go:1173:	siteName := "Sub2API"
+./backend/internal/service/balance_notify_service_test.go:109:	require.Equal(t, "Sub2API", sanitizeEmailHeader("Sub2API"))
+./backend/internal/service/content_moderation_test.go:957:	body := buildContentModerationAccountDisabledEmailBody("Sub2API <Admin>", &ContentModerationLog{
+./backend/internal/service/content_moderation_test.go:971:	require.Contains(t, body, "Sub2API &lt;Admin&gt;")
+./backend/internal/service/auth_service.go:305:	siteName := "Sub2API"
+./backend/internal/service/auth_service.go:348:	siteName := "Sub2API"
+./backend/internal/service/auth_service.go:1218:	siteName := "Sub2API"
+./backend/internal/service/content_moderation.go:1421:		return "Sub2API"
+./backend/internal/service/content_moderation.go:1425:		return "Sub2API"
+./backend/internal/web/embed_test.go:25:		html := []byte(`<html><head><title>Sub2API - AI API Gateway</title></head><body></body></html>`)
+./backend/internal/web/embed_test.go:31:		assert.NotContains(t, string(result), "Sub2API")
+./backend/internal/web/embed_test.go:35:		html := []byte(`<html><head><title>Sub2API - AI API Gateway</title></head><body></body></html>`)
+./backend/internal/web/embed_test.go:44:		html := []byte(`<html><head><title>Sub2API - AI API Gateway</title></head><body></body></html>`)
+./backend/internal/web/embed_test.go:53:		html := []byte(`<html><head><title>Sub2API - AI API Gateway</title></head><body></body></html>`)
+./backend/internal/web/embed_test.go:73:		html := []byte(`<html><head><title lang="en">Sub2API</title></head><body></body></html>`)
+./backend/internal/web/embed_test.go:83:		html := []byte(`<html><head><meta charset="UTF-8"><title>Sub2API</title><script src="app.js"></script></head><body><div id="app"></div></body></html>`)
+./backend/internal/payment/provider/wxpay_test.go:598:		if got := wxSV(req.SceneInfo.H5Info.AppName); got != "Sub2API" {
+./backend/internal/payment/provider/wxpay_test.go:599:			t.Fatalf("scene_info.h5_info.app_name = %q, want %q", got, "Sub2API")
+./backend/internal/payment/provider/wxpay_test.go:613:			"h5AppName": "Sub2API",
+./backend/internal/setup/cli.go:54:	fmt.Println("║       Sub2API Installation Wizard         ║")
+./backend/internal/repository/github_release_service_test.go:226:		require.Equal(s.T(), "Sub2API-Updater", r.Header.Get("User-Agent"))
+./backend/internal/repository/github_release_service.go:86:	req.Header.Set("User-Agent", "Sub2API-Updater")
+./backend/internal/server/api_contract_test.go:585:					service.SettingKeySMTPFromName: "Sub2API",
+./backend/internal/server/api_contract_test.go:614:					service.SettingKeySiteName:     "Sub2API",
+./backend/internal/server/api_contract_test.go:666:					"smtp_from_name": "Sub2API",
+./backend/internal/server/api_contract_test.go:711:						"site_name": "Sub2API",
+./backend/internal/server/api_contract_test.go:952:					"site_name": "Sub2API",
+./backend/cmd/server/main.go:67:		log.Printf("Sub2API %s (commit: %s, built: %s)\n", Version, Commit, Date)
+./backend/cmd/server/main.go:117:	log.Println("Complete the setup wizard to configure Sub2API")
+./README_JA.md:1:# Sub2API
+./README_JA.md:19:> **Sub2API が公式に使用しているドメインは `sub2api.org` と `pincc.ai` のみです。Sub2API の名称を使用している他のウェブサイトは、サードパーティによるデプロイやサービスであり、本プロジェクトとは一切関係がありません。ご利用の際はご自身で確認・判断をお願いします。**
+./README_JA.md:25:Sub2API をオンラインでお試しください: **[https://demo.sub2api.org/](https://demo.sub2api.org/)**
+./README_JA.md:35:Sub2API は、AI 製品のサブスクリプションから API クォータを配分・管理するために設計された AI API ゲートウェイプラットフォームです。ユーザーはプラットフォームが生成した API キーを通じて上流の AI サービスにアクセスでき、プラットフォームは認証、課金、負荷分散、リクエスト転送を処理します。
+./README_JA.md:56:<td valign="middle"><b><a href="https://shop.pincc.ai/">PinCC</a></b> は Sub2API 上に構築された公式リレーサービスで、Claude Code、Codex、Gemini などの人気モデルへの安定したアクセスを提供します。デプロイやメンテナンスは不要で、すぐにご利用いただけます。</td>
+./README_JA.md:75:<td>SilkAPI のご支援に感謝します！<a href="https://code.silkapi.com/register?aff=SUB2API">SilkAPI</a> は Sub2API をベースに構築された中継サービスで、高速かつ安定した Codex API 中継の提供に特化しています。</td>
+./README_JA.md:114:Sub2API を拡張・統合するコミュニティプロジェクト:
+./README_JA.md:118:| ~~[Sub2ApiPay](https://github.com/touwaeriol/sub2apipay)~~ | ~~セルフサービス決済システム~~ | **内蔵済み** — 決済機能は Sub2API に統合されました。別途デプロイは不要です。[決済設定ガイド](docs/PAYMENT.md)をご参照ください |
+./README_JA.md:134:Sub2API（または CRS）を Nginx でリバースプロキシし、Codex CLI と組み合わせて使用する場合、Nginx の `http` ブロックに以下の設定を追加してください:
+./README_JA.md:550:Sub2API は [Antigravity](https://antigravity.so/) アカウントをサポートしています。認証後、Claude および Gemini モデル用の専用エンドポイントが利用可能になります。
+./Dockerfile.save.1:2:# Sub2API Multi-Stage Dockerfile
+./Dockerfile.save.1:88:LABEL description="Sub2API - AI API Gateway Platform"
+./.github/workflows/release.yml:198:          short-description: "Sub2API - AI API Gateway Platform"
+./.github/workflows/release.yml:235:          MESSAGE="🚀 *Sub2API 新版本发布！*"$'\n'$'\n'
+./.github/workflows/release.yml:260:          MESSAGE+="#Sub2API #Release #${TAG_NAME//./_}"
+./CLA.md:1:# Sub2API Individual Contributor License Agreement (v1.0)
+./CLA.md:3:Thank you for your interest in contributing to Sub2API ("the Project"). This Contributor License Agreement ("Agreement") documents the rights granted by contributors to the Project.

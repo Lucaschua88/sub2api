@@ -1,5 +1,5 @@
 /**
- * Vue Router configuration for Sub2API frontend
+ * Vue Router configuration for SecretAPI frontend
  * Defines all application routes with lazy loading and navigation guards
  */
 
@@ -160,17 +160,28 @@ const routes: RouteRecordRaw[] = [
     redirect: '/home'
   },
   {
-    path: '/dashboard',
-    name: 'Dashboard',
-    component: () => import('@/views/user/DashboardView.vue'),
-    meta: {
-      requiresAuth: true,
-      requiresAdmin: false,
-      title: 'Dashboard',
-      titleKey: 'dashboard.title',
-      descriptionKey: 'dashboard.welcomeMessage'
-    }
-  },
+  path: '/dashboard',
+  name: 'Dashboard',
+  component: () => import('@/views/user/DashboardView.vue'),
+  meta: {
+    requiresAuth: true,
+    requiresAdmin: false,
+    title: 'Dashboard',
+    titleKey: 'dashboard.title',
+    descriptionKey: 'dashboard.welcomeMessage'
+  }
+},
+
+{
+  path: '/chat',
+  name: 'Chat',
+  component: () => import('@/views/chat/ChatView.vue'),
+  meta: {
+    requiresAuth: true,
+    requiresAdmin: false,
+    title: 'Chat'
+  }
+},
   {
     path: '/keys',
     name: 'Keys',
@@ -716,7 +727,7 @@ router.beforeEach((to, _from, next) => {
     const menuItem = publicItems.find((item) => item.id === id)
       ?? (authStore.isAdmin ? adminSettingsStore.customMenuItems.find((item) => item.id === id) : undefined)
     if (menuItem?.label) {
-      const siteName = appStore.siteName || 'Sub2API'
+      const siteName = appStore.siteName || 'SecretAPI'
       document.title = `${menuItem.label} - ${siteName}`
     } else {
       document.title = resolveDocumentTitle(to.meta.title, appStore.siteName, to.meta.titleKey as string)
