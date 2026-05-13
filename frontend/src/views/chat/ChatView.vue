@@ -70,13 +70,14 @@
               +
             </button>
 
-            <textarea
-              v-model="input"
-              rows="1"
-              class="max-h-32 flex-1 resize-none bg-transparent text-sm text-white outline-none placeholder:text-gray-500 dark:text-gray-400"
-              placeholder="Ask anything"
-              @keydown.enter.prevent="sendMessage"
-            />
+<textarea
+  v-model="input"
+  rows="1"
+  class="flex-1 bg-white px-3 py-2 text-base leading-6 text-black rounded-xl outline-none"
+  style="color:#000 !important; -webkit-text-fill-color:#000 !important; opacity:1 !important;"
+  placeholder="Ask anything"
+  @keydown.enter.prevent="sendMessage"
+/>
 
             <button
               class="rounded-full bg-primary-600 px-5 py-2 text-sm font-semibold text-white disabled:opacity-40"

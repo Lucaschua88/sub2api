@@ -1,0 +1,46 @@
+* [33m680758b3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32msecretapi-custom[m[33m)[m Fix duplicate AppLayout import
+* [33m9441bcdf[m Use app layout for chat page
+* [33md0dc75a7[m Add chat sidebar navigation
+* [33m7783d8e3[m Improve ChatGPT style chat page
+* [33mc636ba9f[m Customize SecretAPI branding and frontend changes
+* [33m62ccd0ff[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m chore: sync VERSION to 0.1.126 [skip ci]
+*   [33m3d7e7b78[m[33m ([m[1;33mtag: [m[1;33mv0.1.126[m[33m)[m Merge pull request #2356 from jack-atlas/fix/openai-messages-multi-tool-continuation
+[32m|[m[33m\[m  
+[32m|[m * [33m87d73236[m Preserve multi-tool context in OpenAI messages continuation
+* [33m|[m [33mea751f65[m test: update admin settings contract for Antigravity UA
+* [33m|[m   [33mca17c364[m Merge pull request #2319 from wucm667/codex/fix-openai-unpriced-usage-log
+[34m|[m[35m\[m [33m\[m  
+[34m|[m * [33m|[m [33m6d69ae87[m fix(openai): record zero-cost usage for unpriced models
+[34m|[m [33m|[m[33m/[m  
+* [33m|[m   [33mac91de85[m Merge pull request #2353 from XiaoYu994/fix/openai-429-plan-type-sync
+[36m|[m[1;31m\[m [33m\[m  
+[36m|[m * [33m|[m [33mc3a14717[m fix: sync OpenAI plan type from usage limit errors
+[36m|[m [33m|[m[33m/[m  
+* [33m|[m [33ma07a0dac[m feat: add configurable Antigravity user agent version
+* [33m|[m [33m9377c967[m fix: 让消息 cache_control 改写默认关闭
+* [33m|[m [33m297b54d0[m fix: 完善工具名改写测试和格式
+* [33m|[m   [33m1088e27c[m Merge pull request #2340 from iFwu/fix/mimic-rewrite-tool-use-in-messages
+[1;32m|[m[1;33m\[m [33m\[m  
+[1;32m|[m * [33m|[m [33mf97b8534[m fix(mimic): rewrite tool_use names in messages to match renamed tools
+[1;32m|[m [33m|[m[33m/[m  
+* [33m|[m   [33m1e2f5507[m Merge pull request #2289 from wucm667/fix/ccswitch-import-model
+[1;34m|[m[1;35m\[m [33m\[m  
+[1;34m|[m * [33m|[m [33m65493df9[m fix(ccswitch): add codex model to import deeplink
+* [1;35m|[m [33m|[m   [33m348eeaa0[m Merge pull request #2297 from ZeroDeng01/dev
+[1;36m|[m[31m\[m [1;35m\[m [33m\[m  
+[1;36m|[m * [1;35m\[m [33m\[m   [33m37ec21e1[m Merge branch 'main' into dev
+[1;36m|[m [32m|[m[33m\[m [1;35m\[m [33m\[m  
+[1;36m|[m * [33m|[m [1;35m|[m [33m|[m [33mf788e6bd[m fix(service): handle unexpected default transport type, simplify warning append
+[1;36m|[m * [33m|[m [1;35m|[m [33m|[m [33m2a17c0b2[m fix(gemini): route Vertex token exchange through account proxy
+* [33m|[m [33m|[m [1;35m|[m [33m|[m   [33mf19421b1[m Merge pull request #2247 from anzhen-tech/codex/fix-ws-replay-function-call-output
+[34m|[m[35m\[m [33m\[m [33m\[m [1;35m\[m [33m\[m  
+[34m|[m * [33m|[m [33m|[m [1;35m|[m [33m|[m [33m16a31557[m fix(openai): preserve replay tool output continuation
+* [35m|[m [33m|[m [33m|[m [1;35m|[m [33m|[m [33m18cc4691[m 优化系统设置页标签导航
+[33m|[m [35m|[m[33m_[m[33m|[m[33m/[m [1;35m/[m [33m/[m  
+[33m|[m[33m/[m[35m|[m [33m|[m [1;35m|[m [33m|[m   
+* [35m|[m [33m|[m [1;35m|[m [33m|[m   [33m8b0b507a[m Merge pull request #2314 from dexcoder6/fix/payment-result-nan
+[36m|[m[1;31m\[m [35m\[m [33m\[m [1;35m\[m [33m\[m  
+[36m|[m * [35m|[m [33m|[m [1;35m|[m [33m|[m [33mba1c6fa5[m fix: 修复管理端订单详情充值金额显示 NaN
+[36m|[m * [35m|[m [33m|[m [1;35m|[m [33m|[m [33m6884b03e[m fix: 修复支付成功页充值金额显示 NaN
+[36m|[m [33m|[m [35m|[m[33m_[m[33m|[m[33m_[m[1;35m|[m[33m/[m  
+[36m|[m [33m|[m[33m/[m[35m|[m [33m|[m [1;35m|[m   
